@@ -10,8 +10,6 @@ body {
     width: 540px;
     height: 63px;
     margin: 40px auto 40px auto;
-    background: red;
-    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,7 +24,14 @@ h1 {
     color: #75B79E;
 }
 
-.card {
+.content {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-front {
     width: 117px;
     height: 146px;
     background-color: #A7E9AF;
@@ -37,13 +42,30 @@ h1 {
     border: 1px solid #99CEA8;
     box-sizing: border-box;
     border-radius: 5px;
-    margin: 15px; 
+    margin: 15px;
+}
+
+.card-back {
+    width: 117px;
+    height: 146px;
+    background-color: #A7E9AF;
+    border: 1px solid #99CEA8;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+img {
+    width: 100px;
 }
 
 @media (max-width: 600px){
     .header {
         width: 312px;
-        background-color: blue;
     }
     
     h1 {
@@ -52,5 +74,9 @@ h1 {
         line-height: 42px;
         text-align: center;
         letter-spacing: -0.004em;
+    }
+
+    .content {
+        max-width: 150px;
     }
 }

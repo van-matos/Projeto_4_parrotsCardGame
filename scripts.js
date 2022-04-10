@@ -85,4 +85,10 @@ function cardFlip(cardSelection) {
             secondCard = "";
         }
     }
+    if (pairsFound === Number(cardNumber) / 2) {
+        const victoryTimeout = setTimeout(finalize, 100);
+        function finalize() {
+            alert(`Você ganhou em ${globalCounter} jogadas!`)
+        }
+    }
 }

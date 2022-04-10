@@ -25,7 +25,6 @@ h1 {
 }
 
 .content {
-    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -53,10 +52,27 @@ h1 {
     box-sizing: border-box;
     border-radius: 5px;
     margin: 15px;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.out-of-play {
+    display: none;
+}
+
+.selected {
     display: flex;
     align-items: center;
     justify-content: center;
-    display: none;
+}
+
+.correct {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 img {
